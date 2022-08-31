@@ -11,7 +11,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/app.css"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"
@@ -19,23 +19,80 @@
       crossorigin="anonymous"
     />
   </head>
+    <body>
 
-  <body style="text-align: center; background-color: black;" id="body">
-    <div class="keyboard" style="padding: 50px;">
-      <h1 style="color: green">My Keyboard</h1>
-      <p id="showUp" style="font-size: 16px" >
-        Press an arrow key and click the button to know which key was pressed
-        last time.
-      </p>
-      <button onclick="gfg_Run()" class="btn btn-success">Detect Arrow key</button>
-      <p
-        id="showDown"
-        style="color: green; font-size: 20px; font-weight: bold"
-      ></p>
+    <div class="my-todo-list pt-5">
+    <div class="container">
+    <!-- <table class="table table-hover table-dark">
+      <thead class="thead-dark">
+        <tr>
+          <th>Emsil</th>
+          <th>Fullname</th>
+          <th>Password</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+     
+      <tbody>
+        <tr>
+          <td>salam</td>
+          <td>salam</td>
+          <td>salam</td>
+          <td>salam</td>
+        </tr>
+      </tbody>
+  
+
+
+    </table> -->
+    
+    <header>
+      <h1>Comment List</h1>
+      <form id="new-task-form">
+        <input 
+          type="text" 
+          name="new-task-input" 
+          id="new-task-input" 
+          placeholder="What do you think about ?" />
+        <input 
+          type="submit"
+          id="new-task-submit" 
+          value="Add"
+          class="btn"
+          />
+          
+      </form>
+    </header>
+    <main>
+      <section class="task-list">
+        <h2>Comments</h2>
+  
+         <div id="tasks">
+          <!-- <div class="task">
+            <div class="content">
+              <input 
+                type="text" 
+                class="text" 
+                value="A new task"
+                readonly>
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+  
+        </div>
+      </section>
+    </main>
+
+
+    </div>
+   
+
     </div>
 
     <script src="js/main.js">
-    
     </script>
   </body>
 </html>
